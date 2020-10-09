@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: gray;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+        .main-container {
+            display: grid;
+            height auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto 500px auto;
+        }
+        a {
+            padding-top: 10% 2% 1% 2%;
+            margin: 5% 2% 1% 2%;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .top-left-nav {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            color: black;
+        } 
+        .top-right-nav {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding-left: 50%;
+            color: black;
+        }
+        .sign-in {
+            font-weight: 800;
+            border-radius: 2px;
+            background: #4285f4;
+            color: white;
+            padding: 3% 7% 3% 7%;
+            margin-left: 6%;
+            border: none;
+            filter: none;
+        }
+        .logo {
+            position: relative;
+            top: 25%;
+        }
+        .search {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            text-align: center;
+        }
+        .search-icon {
+            width: 2.5%;
+            height: auto;
+            opacity: .2;
+            position: absolute;
+            top: 56.0275%;
+            left: 31.5%;
+            z-index: 1;
+        } 
+        .search-icon:hover {
+            width: 3%;
+            top: 56%;
+        }
+        .search button {
+            position: relative;
+            top: 33%;
+            padding: 2% 5% 2% 5%;
+            margin: 2%;
+            border: none;
+            border-radius: 4px;
+            background: #f2f2f2;
+            color: gray;
+        }
+        #searchbar {
+            width: 120%;
+            height: 8%;
+            border-radius: 22px;
+            border: 2px solid #f2f2f2;
+            position: relative;
+            top: 28%;
+            right: 10%;
+            filter: none;
+            margin: 2%;
+            padding-left: 11%;
+            padding-right: 5%;
+        }
+        #searchbar:hover {
+            -webkit-filter: drop-shadow(1px 1px 2.5px lightgray);
+            filter: drop-shadow(1px 1px 2.5px lightgray);
+        }
+        .search-button:hover {
+            border: 1px solid gray;
+            background: #ffffff;
+            width: 30%;
+            height: initial;
+        }
+        .lucky:hover {
+            border: 1px solid gray;
+            background: #ffffff;
+            width: 33%;
+            height: initial;
+        }
+        span {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background: #f2f2f2;
+            display: flex;
+            flex: 30%;
+        }
+        #footer-left {
+            width: 40%;
+        }
+        #footer-right {
+            width: 30%;
+            padding-left: 60%;
+            
+        }
+        .advertising {
+            color: gray;
+        }
+        .business {
+            color: gray;
+        }
+        .how-search {
+            color: gray;
+        }
+        .privacy {
+            color: gray;
+        }
+        .terms {
+            color: gray;
+        }
+        .settings {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="top-left-nav">
+    <a class="about" href="" target="">About</a>  
+    <a class="store" href="" target="">Store</a>
+    </div>
+
+    <div class="top-right-nav">
+    <a class="gmail" href="" target="">Gmail</a>
+    <a class="images" href="" target="">Images</a>
+    <button class="sign-in" href="">Sign in</button>
+    </div>
+
+    <div class="search">
+    <img class="logo" src="images/googlelogo_color_272x92dp.png">
+    <br><br>
+    <span class="search-box"></span>
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+    <label for="search"></label>
+    <input id="searchbar" type="text" name="search" value=""></input></span>
+    <br><br>
+    <button class="search-button" href="" target="">Google Search</button>
+    <button class="lucky" href="" target="">I'm Feeling Lucky</button>
+    </div>
+
+
+    <span id="footer">
+    <div id="footer-left">
+        <a class="advertising" href="" target="">Advertising</a>  
+        <a class="business" href="" target="">Business</a>
+        <a class="how-search" href="" target="">How Search Works</a>
+    </div>
+    <div id="footer-right">
+        <a class="privacy" href="" target="">Privacy</a>
+        <a class="terms" href="" target="">Terms</a>
+        <a class="settings" href="" target="">Settings</a>
+    </div>
+    </span>
+    </div>
+</body>
